@@ -11,7 +11,7 @@ def cli():
 
 @cli.command()
 def status():
-    """Status of the currently running task."""
+    """Status of the currently tracked task."""
     click.echo("No currently running tasks.")
 
 

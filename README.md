@@ -11,7 +11,7 @@ Keep track of the time you spend on tasks
     pip install --editable .
 
 ### CLI
-#### Start a task
+#### Start tracking a task
 
     tracker start <job_name>
 
@@ -19,7 +19,7 @@ returns
 
     <job_name> started at <date/time>
 
-#### Stop running current task
+#### Stop tracking current task
 
     tracker stop
 
@@ -29,7 +29,7 @@ returns
         Time: <start_time> -- <stop_time>
     Duration: <time>
 
-#### Show current state of the tracker
+#### Show state of currently tracked task
 
     tracker status
 
