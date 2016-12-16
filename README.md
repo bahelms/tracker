@@ -13,11 +13,11 @@ Keep track of the time you spend on tasks
 ### CLI
 #### Start tracking a task
 
-    tracker start <job_name>
+    tracker start <task_name>
 
 returns
 
-    <job_name> started at <date/time>
+    <task_name> started at <date/time>
 
 #### Stop tracking current task
 
@@ -25,9 +25,13 @@ returns
 
 returns
 
-    <job_name> stopped
+    <task_name> stopped
         Time: <start_time> -- <stop_time>
     Duration: <time>
+
+OR
+
+    No currently running task
 
 #### Show state of currently tracked task
 
@@ -35,9 +39,9 @@ returns
 
 returns
 
-    Running task: <job_name>
-    Started: <date/time>
-    Duration: <time>
+    Running task: <task_name>
+         Started: <date/time>
+        Duration: <time>
 
 OR
 
@@ -49,13 +53,13 @@ OR
 
 returns
 
-    -- <job_name>
+    -- <task_name>
       Total Duration: 4 hours, 16 minutes
       Sessions:
         12:34 - 03:14 PM EST
         04:00 - 04:30 PM EST
 
-    -- <job_name>
+    -- <task_name>
       Total Duration: 30 minutes
       Sessions:
         08:15 - 08:30 AM EST

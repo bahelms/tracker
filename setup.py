@@ -9,6 +9,6 @@ setup(
     ],
     entry_points="""
         [console_scripts]
-        tracker=tracker:cli
+        tracker=cli:cli
     """
 )
