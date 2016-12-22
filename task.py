@@ -5,4 +5,9 @@ class Task(object):
         self.end_date = None
 
     def to_csv(self):
-        return "{name},{start_date},{end_date}".format(self.__dict__)
+        """Format: task_name,start_date,end_date
+
+        Returns:
+            (str): a csv representation of a Task
+        """
+        return "{name},{start_date},{end_date}\n".format(**self.__dict__)

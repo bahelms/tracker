@@ -26,16 +26,12 @@ def status():
 @click.argument("task")
 def start(task_name):
     """Start tracking a task"""
-    # storage format: task_name,start_date,end_date
 
     # stop()
     task = Task(task_name)
     tracker = Tracker(task)
-
-    # start_date = datetime.today().strftime("%m/%d/%y %I:%M %p %Z")
-    # click.echo("{0} started at {1}".format(task, start_date))
-    # with open("task_store.csv", "a") as f:
-    #     f.write("{0},{1},\n".format(task, start_date))
+    tracker.start()
+    click.echo("{0} started at {1}".format(task_name, task.start_date))
 
 
 @cli.command()

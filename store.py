@@ -6,7 +6,11 @@ class Store(object):
         self.file = file
 
     def insert(self, task):
-        """Creates a new task record"""
+        """Creates a new task record
+
+        Args:
+            task (:obj:`Task`): the task to be saved
+        """
         with open(self.file, "a") as f:
             f.write(task.to_csv())
 

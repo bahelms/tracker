@@ -14,12 +14,13 @@ class TestTracker(unittest.TestCase):
     def test_starting_a_new_task_persists_it_to_the_store(self):
         self.tracker.start()
         with open(self.store.file) as f:
-            tasks = f.read()
+            tasks = f.readlines()
         self.assertEqual(len(tasks), 1)
 
     def test_starting_a_new_task_returns_the_started_task(self):
         task = self.tracker.start()
-        self.assertTrue(task.start_date)
+        self.assertEqual(task, self.task)
+        self.assertTrue(self.task.start_date)
 
 
 if __name__ == "__main__":

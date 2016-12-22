@@ -7,6 +7,7 @@ Keep track of the time you spend on tasks
 
 ## Dev setup
 
+    virtualenv venv
     . venv/bin/activate
     pip install --editable .
 
